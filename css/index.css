@@ -1,0 +1,27 @@
+.mybg{
+    background-color: #1E202B;
+}
+.mysize
+{
+font-size: xx-small;
+}
+.mybm
+{
+    background-attachment: fixed;
+    background-image: url(../images/R.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+}

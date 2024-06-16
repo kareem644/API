@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        >
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <nav class="  navbar  navbar-expand-lg mybg w-100 z-3 text-white  ">
+            <div class="container text-white">
+                <a class="navbar-brand fw-bold text-white " href="#">
+                    <i class="fa-solid fa-cloud text-info"></i>
+                    &nbsp;
+                Weather
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                    <span class="mysize text-white-50">
+                        tagline goes
+                    here
+                    </span>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link active mylink text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">news</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">live cameras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid  mybm position-relative">
+        <div class="input-group mb-3">
+            <input
+                type="text"
+                class="form-control "
+                placeholder="Recipient's username"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+                id="searchInput"
+            >
+            <button class="input-group-text bg-primary text-white" id="basic-addon2 " onclick="fetchData()">submit</button>
+            <br>
+        </div>
+
+        <table >
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>region</th>
+                    <th>country</th>
+                    <th>lat</th>
+                    <th>lon</th>
+
+                </tr>
+            </thead>
+            <tbody id="dataTable" class="mybg text-white">
+                <!-- Data will be inserted here dynamically -->
+            </tbody>
+        </table>
+    
+    </div>
+    <div class="container-fluid">
+        <div class="row text-white mybg">
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <input
+                        type="text"
+                        class="form-control "
+                        placeholder="Recipient's username"
+                        aria-label="Recipient's username"
+                        aria-describedby="basic-addon2"
+                    >
+                    <button class="input-group-text bg-primary text-white" id="basic-addon2 ">submit</button>
+                    <br>
+                </div>
+                <span class="text-white-50 fs-6">Copyright 2014 Company name. Designed by Themezy. All rights reserved</span>
+            </div>
+            <div class="col-md-6 ms-auto text-center fs-5 ">
+                <div>
+                    <i class="fa-brands fa-facebook-f bg-black p-2 rounded-circle text-primary"></i>
+                    &nbsp;
+                    <i class="fa-brands fa-twitter p-2 bg-black rounded-circle text-primary"></i>
+                    &nbsp;
+<i class="fa-brands fa-google-plus-g p-2 bg-black rounded-circle text-primary"></i>
+                    &nbsp;
+                    <i class="fa-brands fa-pinterest p-2 bg-black rounded-circle text-primary"></i>
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
